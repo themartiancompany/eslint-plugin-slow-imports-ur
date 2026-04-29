@@ -114,7 +114,7 @@ pkgdesc="${_pkgdesc[*]}"
 _pkgver="1.0.0"
 pkgver="${_pkgver}"
 _commit="bba6d79ba40f59c135e0bd8faab66e65ed7e0d58"
-pkgrel=8
+pkgrel=9
 arch=(
   'x86_64'
   'arm'
