@@ -130,7 +130,7 @@ license=(
   'custom'
 )
 depends=(
-  'nodejs'
+  "${_node}"
 )
 makedepends=(
 )
@@ -141,6 +141,14 @@ if [[ "${_os}" == "GNU/Linux" ]]; then
 elif [[ "${_os}" == "Android" ]]; then
   makedepends+=(
     "${_node}"
+  )
+elif [[ "${_os}" == "Msys"  ]]; then
+  makedepends+=(
+    "npm"
+  )
+else
+  makedepends+=(
+    "npm"
   )
 fi
 if [[ "${_git}" == "true" ]]; then
