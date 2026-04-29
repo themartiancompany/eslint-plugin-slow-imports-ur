@@ -102,8 +102,10 @@ if [[ "${_os}" == "Android" ]]; then
 fi
 _node="nodejs"
 _pkg=eslint-plugin-slow-imports
-_pkgbase="${_pkg}"
-pkgname="${_pkgbase}"
+pkgbase="${_pkg}"
+pkgname=(
+  "${pkgbase}"
+)
 _pkgdesc=(
   'Provides a rule for detecting'
   'slow imports of external dependencies.'
@@ -123,7 +125,7 @@ arch=(
   'pentium4'
 )
 _http="https://${_git_service}.com"
-url="${_http}/${_ns}/${_pkgbase}"
+url="${_http}/${_ns}/${pkgbase}"
 license=(
   'custom'
 )
