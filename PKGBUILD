@@ -114,15 +114,17 @@ pkgdesc="${_pkgdesc[*]}"
 _pkgver="1.0.0"
 pkgver="${_pkgver}"
 _commit="bba6d79ba40f59c135e0bd8faab66e65ed7e0d58"
-pkgrel=12
+pkgrel=13
 arch=(
-  'x86_64'
-  'arm'
   'aarch64'
+  'arm'
+  "armv7l"
+  "armv8l"
   'i686'
   'mips'
   'powerpc'
   'pentium4'
+  'x86_64'
 )
 _http="https://${_git_service}.com"
 url="${_http}/${_ns}/${pkgbase}"
