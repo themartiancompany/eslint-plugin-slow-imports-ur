@@ -659,16 +659,16 @@ jobs:
                 "n" \
               -T \
               "filesystem"
-      - name:
-          Installs Coreutils.
-        run: |
-          /entrypoint.sh \
-            pacman \
-              -Sy \
-              --noconfirm \
-              --overwrite="*" \
-              "coreutils" || \
-            true
+#       - name:
+#           Installs Coreutils.
+#         run: |
+#           /entrypoint.sh \
+#             pacman \
+#               -Sy \
+#               --noconfirm \
+#               --overwrite="*" \
+#               "coreutils" || \
+#             true
       - name:
           Installs CA certificates.
         run: |
